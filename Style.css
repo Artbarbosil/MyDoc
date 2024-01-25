@@ -1,0 +1,22 @@
+body {
+    font-family: Arial, sans-serif;
+}
+h2 {
+    color: #0c36f1;
+}
+h3 {
+    color: #0011fc;
+}
+ul {
+    list-style-type: none;
+}
+ul li {
+    margin-bottom: 10px;
+}
+ul li ul li {
+    margin-left: 20px;
+    margin-bottom: 5px;
+}
+p {
+    color: #000000;
+}
