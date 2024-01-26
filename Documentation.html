@@ -17,7 +17,18 @@
             -- SCRITP CONTAGEM DE TABELA 
             SELECT COUNT(*) AS Numero_de_tabelas
             FROM information_schema.tables
-            WHERE table_type = 'BASE TABLE' AND table_catalog = 'nome_tabela';   
+            WHERE table_type = 'BASE TABLE' AND table_catalog = 'nome_tabela'; 
+            
+            -- SCRITP CONTAGEM DE COLUNAS
+            SELECT COUNT(*)
+            FROM information_schema.columns
+            WHERE table_name = 'nome_coluna';
+
+            -- SCRITP DE LISTAGEM DE COLUNAS
+            SELECT column_name, data_type
+            FROM information_schema.columns
+            WHERE table_name = 'NOTIFICACAO';
+
         </textarea>
 
 <ul>
@@ -430,30 +441,90 @@
         <ul>
             <li>
                 <h4 id="tabela-titulo">NOTIFICACAO</h4>
-                <h5><b>Colunas</b></h5>
-                <p>NO_ANO NO_IDENTIFICACAO CA_ENTRADA EI_ENTRADA NO_DTENTRADA
-                    RE_ENTRADA CA_SAIDA EI_SAIDA NO_DTSAIDA RE_SAIDA
-                    SN_SAIDA NO_IDSAIDA NO_DTENTREGA SN_ENTREGA NO_DTLEITURA
-                    NO_OBSERVACAO DC_IDENTIFICACAO NO_COMPLEMENTO NO_ANOORIGEM NO_IDORIGEM
-                    NO_ORIGEM RE_ENVIO NO_GERXMLENT NO_GERXMLSAI NO_GERXMLDETENT
-                    NO_GERXMLDETSAI COM_IDENTIFICACAO NO_ERRO NO_INFORMACOES NO_DELAY
-                    US_ENVIO DT_REPLICACAO ETLORIGINALPLATFORMID NO_VISUALIZADOR NO_PAGANTE NO_IDOWNER
+                <h4><b>Colunas (34)</b></h4>
+                <p>NO_ANO
+                    NO_IDENTIFICACAO
+                    CA_ENTRADA
+                    EI_ENTRADA
+                    NO_DTENTRADA
+                    RE_ENTRADA
+                    CA_SAIDA
+                    EI_SAIDA
+                    NO_DTSAIDA
+                    RE_SAIDA
+                    SN_SAIDA
+                    NO_IDSAIDA
+                    NO_DTENTREGA
+                    SN_ENTREGA
+                    NO_DTLEITURA
+                    NO_OBSERVACAO
+                    DC_IDENTIFICACAO
+                    NO_COMPLEMENTO
+                    NO_ANOORIGEM
+                    NO_IDORIGEM
+                    NO_ORIGEM
+                    RE_ENVIO
+                    NO_GERXMLENT
+                    NO_GERXMLSAI
+                    NO_GERXMLDETENT
+                    NO_GERXMLDETSAI
+                    COM_IDENTIFICACAO
+                    NO_ERRO
+                    NO_INFORMACOES
+                    NO_DELAY
+                    US_ENVIO
+                    NO_VISUALIZADOR
+                    NO_PAGANTE
+                    NO_IDOWNER
                 </p>
             </li>
             <!-- Adicione mais tabelas aqui -->
-
-            <li>
-                <h4 id="tabela-titulo">Tabela D</h4>
-            </li>
         </ul>
     </li>
     <li>
         <h3 id="banco-titulos">Banco de MDISTAGE</h3>
+        <div>Possui 32 tabelas</div>
         <ul>
             <li>
-                <h4 id="tabela-titulo">Tabela D</h4>
-                <h5>Subtítulo da Tabela D</h5>
-                <p>Descrição da tabela D.</p>
+                <h4 id="tabela-titulo">NOTIFICACAO</h4>
+                <h4><b>Colunas (36) - Possui 2 colunas a mais que no MDI (DT_REPLICACAO e ETLORIGINALPLATFORMID)</b></h4>
+                <p>NO_ANO
+                    NO_IDENTIFICACAO
+                    CA_ENTRADA
+                    EI_ENTRADA
+                    NO_DTENTRADA
+                    RE_ENTRADA
+                    CA_SAIDA
+                    EI_SAIDA
+                    NO_DTSAIDA
+                    RE_SAIDA
+                    SN_SAIDA
+                    NO_IDSAIDA
+                    NO_DTENTREGA
+                    SN_ENTREGA
+                    NO_DTLEITURA
+                    NO_OBSERVACAO
+                    DC_IDENTIFICACAO
+                    NO_COMPLEMENTO
+                    NO_ANOORIGEM
+                    NO_IDORIGEM
+                    NO_ORIGEM
+                    RE_ENVIO
+                    NO_GERXMLENT
+                    NO_GERXMLSAI
+                    NO_GERXMLDETENT
+                    NO_GERXMLDETSAI
+                    COM_IDENTIFICACAO
+                    NO_ERRO
+                    NO_INFORMACOES
+                    NO_DELAY
+                    US_ENVIO
+                    DT_REPLICACAO
+                    ETLORIGINALPLATFORMID
+                    NO_VISUALIZADOR
+                    NO_PAGANTE
+                    NO_IDOWNER
+                </p>
             </li>
             <!-- Adicione mais tabelas aqui -->
         </ul>
