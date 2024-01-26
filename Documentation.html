@@ -20,7 +20,7 @@
             WHERE table_type = 'BASE TABLE' AND table_catalog = 'nome_tabela'; 
             
             -- SCRITP CONTAGEM DE COLUNAS
-            SELECT COUNT(*)
+            SELECT COUNT(*) as Numero_de_colunas
             FROM information_schema.columns
             WHERE table_name = 'nome_coluna';
 
@@ -479,6 +479,33 @@
                 </p>
             </li>
             <!-- Adicione mais tabelas aqui -->
+
+            <li>
+                <h4 id="tabela-titulo">CONTROLEARQUIVO</h4>
+                <h4><b>Colunas (21)</b></h4>
+                <p>CA_IDENTIFICACAO
+                    NO_ANO
+                    NO_IDENTIFICACAO
+                    AP_IDENTIFICACAO
+                    CA_DATAHORA
+                    CA_ANTERIOR
+                    CA_DIRETORIOORIGEM
+                    CA_ARQUIVOORIGEM
+                    CA_TAMANHOORIGEM
+                    CA_DIRETORIO
+                    CA_ARQUIVO
+                    CA_TAMANHO
+                    CA_CUSTO
+                    EI_ORIGEM
+                    EI_DESTINO
+                    DC_IDENTIFICACAO
+                    CA_DIRETORIOBACKUP
+                    CA_ARQUIVOBACKUP
+                    DAD_ORIGEM
+                    DAD_DESTINO
+                    CA_INSTANCIA
+                </p>
+            </li>
         </ul>
     </li>
     <li>
@@ -527,6 +554,34 @@
                 </p>
             </li>
             <!-- Adicione mais tabelas aqui -->
+            <li>
+                <h4 id="tabela-titulo">CONTROLEARQUIVO</h4>
+                <h4><b>Colunas (23) - Possui 2 colunas a mais que no MDI (DT_REPLICACAO e ETLORIGINALPLATFORMID)</b></h4>
+                <p>CA_IDENTIFICACAO
+                    NO_ANO
+                    NO_IDENTIFICACAO
+                    AP_IDENTIFICACAO
+                    CA_DATAHORA
+                    CA_ANTERIOR
+                    CA_DIRETORIOORIGEM
+                    CA_ARQUIVOORIGEM
+                    CA_TAMANHOORIGEM
+                    CA_DIRETORIO
+                    CA_ARQUIVO
+                    CA_TAMANHO
+                    CA_CUSTO
+                    EI_ORIGEM
+                    EI_DESTINO
+                    DC_IDENTIFICACAO
+                    CA_DIRETORIOBACKUP
+                    CA_ARQUIVOBACKUP
+                    DAD_ORIGEM
+                    DAD_DESTINO
+                    CA_INSTANCIA
+                    DT_REPLICACAO
+                    ETLORIGINALPLATFORMID
+                </p>
+            </li>
         </ul>
     </li>
 
