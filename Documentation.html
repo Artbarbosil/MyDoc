@@ -15,7 +15,7 @@
         <h4></h4>
         <textarea readonly> 
             -- SCRITP CONTAGEM DE TABELA 
-            SELECT COUNT(*) AS Numero_de_colunas
+            SELECT COUNT(*) AS Numero_de_tabelas
             FROM information_schema.tables
             WHERE table_type = 'BASE TABLE' AND table_catalog = 'nome_tabela';   
         </textarea>
@@ -426,6 +426,7 @@
     </li>
     <li>
         <h3 id="banco-titulos">Banco MDI</h3>
+        <div>Possui 258 tabelas</div>
         <ul>
             <li>
                 <h4 id="tabela-titulo">NOTIFICACAO</h4>
