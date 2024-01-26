@@ -8,8 +8,18 @@
 <body>
     <button id="toggleButton" style="position: fixed; top: 10px; right: 10px;">Mudar Tema</button>
     <h1>Troubleshooting Wiki</h1>
-
     <h2>Bancos</h2>
+
+    <div>
+        <h3>Possiveis scripts de ajuda</h3>
+        <h4></h4>
+        <textarea readonly> 
+            -- SCRITP CONTAGEM DE TABELA 
+            SELECT COUNT(*) AS Numero_de_colunas
+            FROM information_schema.tables
+            WHERE table_type = 'BASE TABLE' AND table_catalog = 'MDISTAGE';   
+        </textarea>
+
 <ul>
     <li>
         <h3 id="banco-titulos">Banco SED - Arthur</h3>

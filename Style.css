@@ -20,3 +20,10 @@ ul li ul li {
 p h5 {
     color: #000000;
 }
+
+textarea {
+    width: 50%;
+    height: 81px;
+    font-family: 'Courier New', monospace;
+    resize: vertical;
+}
