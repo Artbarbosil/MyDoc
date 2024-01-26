@@ -442,7 +442,8 @@
             <li>
                 <h4 id="tabela-titulo">NOTIFICACAO</h4>
                 <h4><b>Colunas (34)</b></h4>
-                <p>NO_ANO
+                <p>
+                    NO_ANO
                     NO_IDENTIFICACAO
                     CA_ENTRADA
                     EI_ENTRADA
@@ -478,12 +479,11 @@
                     NO_IDOWNER
                 </p>
             </li>
-            <!-- Adicione mais tabelas aqui -->
-
             <li>
                 <h4 id="tabela-titulo">CONTROLEARQUIVO</h4>
                 <h4><b>Colunas (21)</b></h4>
-                <p>CA_IDENTIFICACAO
+                <p>
+                    CA_IDENTIFICACAO
                     NO_ANO
                     NO_IDENTIFICACAO
                     AP_IDENTIFICACAO
@@ -506,8 +506,120 @@
                     CA_INSTANCIA
                 </p>
             </li>
+            <li>
+                <h4 id="tabela-titulo">EMPRESAIDENTIFICACAO</h4>
+                <h4><b>Colunas (10) - Possui a coluna RowVersionEtl diferente do MDISTAGE</b></h4>
+                <p>
+                    EI_IDENTIFICACAO
+                    EI_DESCRICAO
+                    EM_IDENTIFICACAO
+                    EI_ATIVO
+                    EI_SENHAZIP
+                    EI_APELIDO
+                    EI_DATACADASTRO
+                    COM_IDENTIFICACAO
+                    EI_INSTANCIA
+                    RowVersionEtl
+                </p>
+            </li>
+            <li>
+                <h4 id="tabela-titulo">EDIIDENTIFICACAO</h4>
+                <h4><b>Colunas (7) - Possui a coluna RowVersionEtl diferente do MDISTAGE</b></h4>
+                <p>
+                    EI_IDENTIFICACAO
+                    ED_EDIID
+                    ED_EDICOMPLEMENTO
+                    PD_IDENTIFICACAO
+                    ED_DATACADASTRO
+                    COM_IDENTIFICACAO
+                    RowVersionEtl
+                </p>
+            </li>
+            <li>
+                <h4 id="tabela-titulo">DOCUMENTO</h4>
+                <h4><b>Colunas (19) - Possui a coluna RowVersionEtl diferente do MDISTAGE</b></h4>
+                <p>
+                    DC_IDENTIFICACAO
+                    DC_DESCRICAO
+                    PD_IDENTIFICACAO
+                    DC_DOCUMENTO
+                    DC_VERSAO
+                    DC_APELIDO
+                    DC_DATACADASTRO
+                    DC_DOWNLOADARQ
+                    DC_DESCRICAO_PTBR
+                    DC_DESCRICAO_EN
+                    DC_DESCRICAO_ES
+                    DC_DESCRICAO_FR
+                    DC_DESCRICAO_DE
+                    DC_APELIDO_PTBR
+                    DC_APELIDO_EN
+                    DC_APELIDO_ES
+                    DC_APELIDO_FR
+                    DC_APELIDO_DE
+                    RowVersionEtl
+                </p>
+            </li>
+            <li>
+                <h4 id="tabela-titulo">REDE</h4>
+                <h4><b>Colunas (11) - Possui a coluna RowVersionEtl diferente do MDISTAGE</b></h4>
+                <p>
+                    RE_IDENTIFICACAO
+                    RE_DESCRICAO
+                    RE_TMALERTAPROC
+                    RE_TMALERTAVAN
+                    RE_GRUPO
+                    RE_DESCRICAO_PTBR
+                    RE_DESCRICAO_EN
+                    RE_DESCRICAO_ES
+                    RE_DESCRICAO_FR
+                    RE_DESCRICAO_DE
+                    RowVersionEtl
+                </p>
+            </li>
+            <li>
+                <h4 id="tabela-titulo">USUARIO</h4>
+                <h4><b>Colunas (34) - Possui a coluna RowVersionEtl diferente do MDISTAGE</b></h4>
+                <p>
+                    US_IDENTIFICACAO
+                    US_NOME
+                    US_SENHA
+                    US_ADMINISTRADOR
+                    US_ATIVO
+                    US_EMAIL
+                    US_DATACADASTRO
+                    US_VENCIDO
+                    UT_IDENTIFICACAO
+                    US_MONITORIA
+                    US_INTERVALO
+                    US_DTHRVERIFICACAO
+                    US_PAPEL
+                    US_MODO
+                    US_FILTRODIAS
+                    US_IDIOMA
+                    US_CULTURA
+                    US_FILTROLIMITE
+                    US_VIS_TODAS_EMPRESAS
+                    ETT_IDENTIFICACAO
+                    EEU_IDENTIFICACAO
+                    MN_MENUINICIAL
+                    COM_IDENTIFICACAO
+                    US_COBRAR
+                    US_CARREGARDADOSWEB
+                    US_USACONEXAO
+                    US_GRAVADADOS
+                    US_IGNORAEXT
+                    US_INSTANCIA
+                    US_SINTEL
+                    US_SENHAFORTE
+                    US_RECUPERASENHA
+                    IdFusoHorario
+                    RowVersionEtl
+                </p>
+            </li>
         </ul>
     </li>
+
     <li>
         <h3 id="banco-titulos">Banco de MDISTAGE</h3>
         <div>Possui 32 tabelas</div>
@@ -578,6 +690,129 @@
                     DAD_ORIGEM
                     DAD_DESTINO
                     CA_INSTANCIA
+                    DT_REPLICACAO
+                    ETLORIGINALPLATFORMID
+                </p>
+            </li>
+
+            <li>
+                <h4 id="banco-titulos">EMPRESAIDENTIFICACAO</h4>
+                <h4><b>Colunas (11) - Possui 2 colunas a mais que no MDI e nao tem a RowVersionEtl 
+                    (DT_REPLICACAO ETLORIGINALPLATFORMID)</b></h4>
+                <p>
+                    EI_IDENTIFICACAO
+                    EI_DESCRICAO
+                    EM_IDENTIFICACAO
+                    EI_ATIVO
+                    EI_SENHAZIP
+                    EI_APELIDO
+                    EI_DATACADASTRO
+                    COM_IDENTIFICACAO
+                    EI_INSTANCIA
+                    DT_REPLICACAO
+                    ETLORIGINALPLATFORMID
+                </p>
+            </li>
+
+            <li>
+                <h4 id="tabela-titulo">EDIIDENTIFICACAO</h4>
+                <h4><b>Colunas (8) - Possui 2 colunas a mais que no MDI e nao tem a RowVersionEtl 
+                    (DT_REPLICACAO ETLORIGINALPLATFORMID)</b></h4>
+                <p>
+                    EI_IDENTIFICACAO
+                    ED_EDIID
+                    ED_EDICOMPLEMENTO
+                    PD_IDENTIFICACAO
+                    ED_DATACADASTRO
+                    COM_IDENTIFICACAO
+                    DT_REPLICACAO
+                    ETLORIGINALPLATFORMID
+                </p>
+            </li>
+            <li>
+                <h4 id="tabela-titulo">DOCUMENTO</h4>
+                <h4><b>Colunas (20) - Possui 2 colunas a mais que no MDI e nao tem a RowVersionEtl 
+                    (DT_REPLICACAO ETLORIGINALPLATFORMID)</b></h4>
+                <p>
+                    DC_IDENTIFICACAO
+                    DC_DESCRICAO
+                    PD_IDENTIFICACAO
+                    DC_DOCUMENTO
+                    DC_VERSAO
+                    DC_APELIDO
+                    DC_DATACADASTRO
+                    DC_DOWNLOADARQ
+                    DC_DESCRICAO_PTBR
+                    DC_DESCRICAO_EN
+                    DC_DESCRICAO_ES
+                    DC_DESCRICAO_FR
+                    DC_DESCRICAO_DE
+                    DC_APELIDO_PTBR
+                    DC_APELIDO_EN
+                    DC_APELIDO_ES
+                    DC_APELIDO_FR
+                    DC_APELIDO_DE
+                    DT_REPLICACAO
+                    ETLORIGINALPLATFORMID
+                </p>
+            </li>
+            <li>
+                <h4 id="tabela-titulo">REDE</h4>
+                <h4><b>Colunas (12) - Possui 2 colunas a mais que no MDI e nao tem a RowVersionEtl 
+                    (DT_REPLICACAO ETLORIGINALPLATFORMID)</b></h4>
+                <p>
+                    RE_IDENTIFICACAO
+                    RE_DESCRICAO
+                    RE_TMALERTAPROC
+                    RE_TMALERTAVAN
+                    RE_GRUPO
+                    RE_DESCRICAO_PTBR
+                    RE_DESCRICAO_EN
+                    RE_DESCRICAO_ES
+                    RE_DESCRICAO_FR
+                    RE_DESCRICAO_DE
+                    DT_REPLICACAO
+                    ETLORIGINALPLATFORMID
+                </p>
+            </li>
+            <li>
+                <h4 id="tabela-titulo">USUARIO</h4>
+                <h4><b>Colunas (35) - Possui 2 colunas a mais que no MDI e nao tem a RowVersionEtl 
+                    (DT_REPLICACAO ETLORIGINALPLATFORMID)</b></h4>
+                <p>
+                    US_IDENTIFICACAO
+                    US_NOME
+                    US_SENHA
+                    US_ADMINISTRADOR
+                    US_ATIVO
+                    US_EMAIL
+                    US_DATACADASTRO
+                    US_VENCIDO
+                    UT_IDENTIFICACAO
+                    US_MONITORIA
+                    US_INTERVALO
+                    US_DTHRVERIFICACAO
+                    US_PAPEL
+                    US_MODO
+                    US_FILTRODIAS
+                    US_IDIOMA
+                    US_CULTURA
+                    US_FILTROLIMITE
+                    US_VIS_TODAS_EMPRESAS
+                    ETT_IDENTIFICACAO
+                    EEU_IDENTIFICACAO
+                    MN_MENUINICIAL
+                    COM_IDENTIFICACAO
+                    US_COBRAR
+                    US_CARREGARDADOSWEB
+                    US_USACONEXAO
+                    US_GRAVADADOS
+                    US_IGNORAEXT
+                    US_INSTANCIA
+                    US_SINTEL
+                    US_SENHAFORTE
+                    US_RECUPERASENHA
+                    IdFusoHorario
                     DT_REPLICACAO
                     ETLORIGINALPLATFORMID
                 </p>
