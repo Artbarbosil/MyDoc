@@ -27,3 +27,29 @@ textarea {
     font-family: 'Courier New', monospace;
     resize: vertical;
 }
+.collapsed {
+    display: none;
+}
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    
+    overflow: hidden;
+    display: flex; /* Faz o <ul> um contêiner flexível */
+    justify-content: space-around; /* Distribui o espaço ao redor dos itens */
+}
+
+nav ul li {
+    float: left;
+}
+
+nav ul li a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 18px 18px;
+    text-decoration: none;
+   
+}
+

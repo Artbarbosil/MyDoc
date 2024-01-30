@@ -14,3 +14,12 @@ window.onload = function() {
         isBlack = !isBlack;
     }
 }
+
+window.onload = function() {
+    var button = document.getElementById('listButton');
+    var list = document.getElementById('listDb'); // Substitua 'listId' pelo id da lista que você deseja expandir/colapsar
+
+    button.onclick = function() {
+        list.classList.toggle('collapsed');
+    }
+}
