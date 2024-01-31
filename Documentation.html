@@ -663,6 +663,62 @@
                     RowVersionEtl
                 </p>
             </li>
+            <li>
+                <h4 id="tabela-titulo">NOTIFICACAOCOMPLEMENTO</h4>
+                <h4><b>Colunas (6)</b></h4>
+                <p>
+                    NOC_IDENTIFICACAO
+                    NO_ANO
+                    NO_IDENTIFICACAO
+                    NOC_DESCRICAO
+                    NOC_VALOR
+                    NOC_DATAHORA
+                </p>
+            </li>
+            <li>
+                <h4 id="tabela-titulo">LOG</h4>
+                <h4><b>Colunas (17)</b></h4>
+                <p>
+                    LG_IDENTIFICACAO
+                    AP_IDENTIFICACAO
+                    LG_DATAHORA
+                    LG_ASSUNTO
+                    SS_IDENTIFICACAO
+                    LG_ARQUIVO
+                    LG_DIRETORIO
+                    LG_ERROS
+                    LG_ALERTAS
+                    SL_IDENTIFICACAO
+                    CA_IDENTIFICACAO
+                    LG_IDPAI
+                    NO_ANO
+                    NO_IDENTIFICACAO
+                    EI_ORIGEM
+                    EI_DESTINO
+                    DC_IDENTIFICACAO
+                </p>
+            </li>
+            <li>
+                <h4 id="tabela-titulo">DOCUMENTONOTIFICACAO</h4>
+                <h4><b>Colunas (4)</b></h4>
+                <p>
+                    DN_IDENTIFICACAO
+                    NO_ANO
+                    NO_IDENTIFICACAO
+                    DN_DATACADASTRO
+                </p>
+            </li>
+            <li>
+                <h4 id="tabela-titulo">VALORDOCUMENTO</h4>
+                <h4><b>Colunas (5)</b></h4>
+                <p>
+                    VD_IDENTIFICACAO
+                    DN_IDENTIFICACAO
+                    VD_DESCRICAOCAMPO
+                    VD_VALORCAMPO
+                    VD_EXIBEMDIWEB
+                </p>
+            </li>
         </ul>
     </li>
 
@@ -890,6 +946,92 @@
                     etlqueueconfigurationid
                     processname
                     value
+                </p>
+            </li>
+            <li>
+                <h4 id="tabela-titulo">NOTIFICACAOCOMPLEMENTO</h4>
+                <h4><b>Colunas (8) - Possui 2 colunas a mais que no MDI e nao tem a RowVersionEtl 
+                    (DT_REPLICACAO ETLORIGINALPLATFORMID)</b></h4>
+                <p>
+                    NOC_IDENTIFICACAO
+                    NO_ANO
+                    NO_IDENTIFICACAO
+                    NOC_DESCRICAO
+                    NOC_VALOR
+                    NOC_DATAHORA
+                    DT_REPLICACAO
+                    ETLORIGINALPLATFORMID
+                </p>
+            </li>
+            <li>
+                <h4 id="tabela-titulo">LOG</h4>
+                <h4><b>Colunas (19)</b></h4>
+                <p>
+                    LG_IDENTIFICACAO
+                    AP_IDENTIFICACAO
+                    LG_DATAHORA
+                    LG_ASSUNTO
+                    SS_IDENTIFICACAO
+                    LG_ARQUIVO
+                    LG_DIRETORIO
+                    LG_ERROS
+                    LG_ALERTAS
+                    SL_IDENTIFICACAO
+                    CA_IDENTIFICACAO
+                    LG_IDPAI
+                    NO_ANO
+                    NO_IDENTIFICACAO
+                    EI_ORIGEM
+                    EI_DESTINO
+                    DC_IDENTIFICACAO
+                    DT_REPLICACAO
+                    ETLORIGINALPLATFORMID
+                </p>
+            </li>
+            <li>
+                <h4 id="tabela-titulo">Flexplanpeerexception</h4>
+                <h4><b>Colunas (15)</b></h4>
+                <p>
+                    flexplanpeerexceptionid
+                    peeridfrom
+                    peeridto
+                    networkidfrom
+                    networkidto
+                    newpeeridfrom
+                    newpeeridto
+                    newnetworkidfrom
+                    newnetworkidto
+                    creationdate
+                    isactive
+                    documenttypeidto
+                    documenttypeidfrom
+                    newdocumenttypeidto
+                    newdocumenttypeidfrom
+                </p>
+            </li>
+            <li>
+                <h4 id="tabela-titulo">DOCUMENTONOTIFICACAO</h4>
+                <h4><b>Colunas (6)</b></h4>
+                <p>
+                    DN_IDENTIFICACAO
+                    NO_ANO
+                    NO_IDENTIFICACAO
+                    DN_DATACADASTRO
+                    DT_REPLICACAO
+                    ETLORIGINALPLATFORMID
+                </p>
+            </li>
+            <li>
+                <h4 id="tabela-titulo">VALORDOCUMENTO</h4>
+                <h4><b>Colunas (7)</b></h4>
+                <p>
+                    VD_IDENTIFICACAO
+                    DN_IDENTIFICACAO
+                    VD_DESCRICAOCAMPO
+                    VD_VALORCAMPO
+                    VD_EXIBEMDIWEB
+                    DT_REPLICACAO
+                    ETLORIGINALPLATFORMID
                 </p>
             </li>
         </ul>
